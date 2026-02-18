@@ -1,0 +1,2957 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film CRM | Каталог для публикаций</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+  <body>
+    
+    <div class="wrapper">
+      <header class="header header--content-manager" id="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="./" class="logo">Film CRM</a>
+
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="cm-catalog-publications.html" class="nav__link _active">Каталог для публикаций</a></li>
+          <li class="nav__item"><a href="cm-my-channels.html" class="nav__link ">Мои каналы</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__action-btn" href="#!">
+          <svg class="icon icon--reload">
+            <use xlink:href="./images/sprite.svg#reload"></use>
+          </svg>
+        </a>
+        <button class="header__action-btn notification" data-js-notification-btn>
+          <svg class="icon icon--notification">
+            <use xlink:href="./images/sprite.svg#notification"></use>
+          </svg>
+          <span class="notification-count">2</span>
+        </button>
+        <div class="account">
+          <a class="account__avatar avatar" href="cm-profile.html">
+            <span>VS</span>
+          </a>
+          <div class="account__info">
+            <a class="account__name" href="cm-profile.html">Vladimir Shaginov</a>
+            <span class="account__status">Контент-менеджер</span>
+          </div>
+        </div>
+        <button class="burger-btn" data-js-burger-btn>
+          <span class="burger-icon"></span>
+        </button>
+      </div>
+
+      <div class="notification-popup" data-js-notification-popup>
+        <div class="notification-popup__header">
+          <h3 class="notification-popup__header-title">Уведомления</h3>
+          <button class="notification-popup__close-btn" data-js-notification-popup-close>
+            <svg class="icon icon--close">
+              <use xlink:href="./images/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="notification-popup__list">
+          <li class="notification-popup__item not-read">
+            <svg class="icon icon--check-circle">
+              <use xlink:href="./images/sprite.svg#check-circle"></use>
+            </svg>
+            <div class="notification-popup__item-info">
+              <h4 class="notification-popup__item-title">
+                Пользователь <b>lollykuz@gmail.com</b> принял(а) фильм <a class="btn--text" href="#!">tt0000003</a> в каталог для
+                публикаций.
+              </h4>
+              <data class="notification-popup__item-date" value="27.11.2025, 09:17">27.11.2025, 09:17</data>
+            </div>
+          </li>
+          <li class="notification-popup__item not-read">
+            <svg class="icon icon--close-circle">
+              <use xlink:href="./images/sprite.svg#close-circle"></use>
+            </svg>
+            <div class="notification-popup__item-info">
+              <h4 class="notification-popup__item-title">
+                Пользователь <b>lollykuz@gmail.com</b> вернул(а) фильм <a class="btn--text" href="#!">tt0000003</a> на доработку.
+              </h4>
+              <data class="notification-popup__item-date" value="27.11.2025, 09:17">27.11.2025, 09:17</data>
+            </div>
+          </li>
+          <li class="notification-popup__item">
+            <svg class="icon icon--check-circle">
+              <use xlink:href="./images/sprite.svg#check-circle"></use>
+            </svg>
+            <div class="notification-popup__item-info">
+              <h4 class="notification-popup__item-title">
+                Пользователь <b>lollykuz@gmail.com</b> принял(а) фильм <a class="btn--text" href="#!">tt0000003</a> в каталог для
+                публикаций.
+              </h4>
+              <data class="notification-popup__item-date" value="27.11.2025, 09:17">27.11.2025, 09:17</data>
+            </div>
+          </li>
+          <li class="notification-popup__item">
+            <svg class="icon icon--close-circle">
+              <use xlink:href="./images/sprite.svg#close-circle"></use>
+            </svg>
+            <div class="notification-popup__item-info">
+              <h4 class="notification-popup__item-title">
+                Пользователь <b>lollykuz@gmail.com</b> вернул(а) фильм <a class="btn--text" href="#!">tt0000003</a> на доработку.
+              </h4>
+              <data class="notification-popup__item-date" value="27.11.2025, 09:17">27.11.2025, 09:17</data>
+            </div>
+          </li>
+          <li class="notification-popup__item">
+            <svg class="icon icon--check-circle">
+              <use xlink:href="./images/sprite.svg#check-circle"></use>
+            </svg>
+            <div class="notification-popup__item-info">
+              <h4 class="notification-popup__item-title">
+                Пользователь <b>lollykuz@gmail.com</b> принял(а) фильм <a class="btn--text" href="#!">tt0000003</a> в каталог для
+                публикаций.
+              </h4>
+              <data class="notification-popup__item-date" value="27.11.2025, 09:17">27.11.2025, 09:17</data>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="burger-overlay" data-js-burger-overlay></div>
+<div class="burger-menu" data-js-burger-menu>
+  <ul class="burger-menu__list">
+    <li class="burger-menu__item"><a class="burger-menu__link" href="cm-catalog-publications.html">Каталог для публикаций</a></li>
+    <li class="burger-menu__item"><a class="burger-menu__link" href="cm-my-channels.html">Мои каналы</a></li>
+  </ul>
+</div>
+
+
+      <main class="main">
+        <section class="publications">
+          <div class="publications__inner inner container">
+            <h1>Каталог для публикаций</h1>
+            <div class="publications__content">
+              <div class="publications__header"><form class="filter-wrapper">
+  <div class="filter-box filter-hero">
+    <div class="field">
+      <span class="field__title">Поиск</span>
+      <label class="field__input-box" for="filter-search">
+        <button class="field__btn" type="button">
+          <svg class="icon icon--search">
+            <use xlink:href="./images/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <input
+          class="field__input"
+          id="filter-search"
+          type="text"
+          name="filter-search"
+          autocomplete="off"
+          placeholder="По названию или IMDb ID"
+        />
+      </label>
+    </div>
+    <div class="field">
+      <span class="field__title">Тип контента</span>
+      <div class="dropdown-single" data-name="contentType">
+        <button class="dropdown-single__trigger" type="button">
+          <svg class="icon icon--angle-down dropdown-single__trigger-icon">
+            <use xlink:href="./images/sprite.svg#angle-down"></use>
+          </svg>
+          <span class="dropdown-single__placeholder">Не выбрано</span>
+          <span class="dropdown-single__value" style="display: none"></span>
+        </button>
+        <ul class="dropdown-single__list">
+          <li class="dropdown-single__list-item" data-value="txEpisode" data-selected>
+            <span class="dropdown-single__label">txEpisode</span>
+          </li>
+          <li class="dropdown-single__list-item" data-value="txEpisode_2">
+            <span class="dropdown-single__label">txEpisode 2</span>
+          </li>
+          <li class="dropdown-single__list-item" data-value="txEpisode_3">
+            <span class="dropdown-single__label">txEpisode 3</span>
+          </li>
+          <li class="dropdown-single__list-item" disabled data-value="txEpisode_4">
+            <span class="dropdown-single__label">txEpisode 4</span>
+          </li>
+        </ul>
+        <input type="hidden" class="dropdown-single__input-hidden" name="contentType" />
+      </div>
+    </div>
+    <div class="field">
+      <span class="field__title">Жанры</span>
+      <div class="dropdown-multiple" data-name="genres">
+        <button class="dropdown-multiple__trigger" type="button">
+          <svg class="icon icon--angle-down dropdown-multiple__trigger-icon">
+            <use xlink:href="./images/sprite.svg#angle-down"></use>
+          </svg>
+          <span class="dropdown-multiple__placeholder">Не выбрано</span>
+          <div class="dropdown-multiple__tags"></div>
+        </button>
+        <ul class="dropdown-multiple__list">
+          <li class="dropdown-multiple__list-item" data-value="animation">
+            <span class="dropdown-multiple__label">Анимация</span>
+            <div class="dropdown-multiple__checkbox">
+              <svg class="icon icon--check">
+                <use xlink:href="./images/sprite.svg#check"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="dropdown-multiple__list-item" data-value="comedy">
+            <span class="dropdown-multiple__label">Комедия</span>
+            <div class="dropdown-multiple__checkbox">
+              <svg class="icon icon--check">
+                <use xlink:href="./images/sprite.svg#check"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="dropdown-multiple__list-item" data-value="romance">
+            <span class="dropdown-multiple__label">Романтика</span>
+            <div class="dropdown-multiple__checkbox">
+              <svg class="icon icon--check">
+                <use xlink:href="./images/sprite.svg#check"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="dropdown-multiple__list-item" data-value="drama">
+            <span class="dropdown-multiple__label">Драма</span>
+            <div class="dropdown-multiple__checkbox">
+              <svg class="icon icon--check">
+                <use xlink:href="./images/sprite.svg#check"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="dropdown-multiple__list-item" disabled data-value="horror">
+            <span class="dropdown-multiple__label">Ужас</span>
+            <div class="dropdown-multiple__checkbox">
+              <svg class="icon icon--check">
+                <use xlink:href="./images/sprite.svg#check"></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
+        <input type="hidden" class="dropdown-multiple__input-hidden" name="genres" />
+      </div>
+    </div>
+  </div>
+  <div class="filter-box filter-more filter-more__container" data-js-filter-more-container>
+    <div class="field">
+      <span class="field__title">Рейтинг</span>
+      <div class="input-fromto" data-name="rating">
+        <div class="input-fromto__field">
+          <input
+            class="input-fromto__input input-fromto__input--from"
+            type="number"
+            name="rating-from"
+            min="0"
+            max="10"
+            placeholder="От"
+          />
+          <div class="input-fromto__buttons">
+            <button class="input-fromto__btn input-fromto__btn--plus" type="button" aria-label="Увеличить значение" tabindex="-1">
+              <svg class="icon icon--angle-up">
+                <use xlink:href="./images/sprite.svg#angle-up"></use>
+              </svg>
+            </button>
+            <button
+              class="input-fromto__btn input-fromto__btn--minus"
+              type="button"
+              aria-label="Уменьшить значение"
+              tabindex="-1"
+            >
+              <svg class="icon icon--angle-down">
+                <use xlink:href="./images/sprite.svg#angle-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <svg class="icon icon--minus input-fromto__separator">
+          <use xlink:href="./images/sprite.svg#minus"></use>
+        </svg>
+        <div class="input-fromto__field">
+          <input
+            class="input-fromto__input input-fromto__input--to"
+            type="number"
+            name="rating-to"
+            min="0"
+            max="10"
+            placeholder="До"
+          />
+          <div class="input-fromto__buttons">
+            <button class="input-fromto__btn input-fromto__btn--plus" type="button" aria-label="Увеличить значение" tabindex="-1">
+              <svg class="icon icon--angle-up">
+                <use xlink:href="./images/sprite.svg#angle-up"></use>
+              </svg>
+            </button>
+            <button
+              class="input-fromto__btn input-fromto__btn--minus"
+              type="button"
+              aria-label="Уменьшить значение"
+              tabindex="-1"
+            >
+              <svg class="icon icon--angle-down">
+                <use xlink:href="./images/sprite.svg#angle-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <span class="field__title">Длительность, мин</span>
+      <div class="input-fromto" data-name="duration">
+        <div class="input-fromto__field">
+          <input
+            class="input-fromto__input input-fromto__input--from"
+            type="number"
+            name="duration-from"
+            min="0"
+            max="1000"
+            placeholder="От"
+          />
+          <div class="input-fromto__buttons">
+            <button class="input-fromto__btn input-fromto__btn--plus" type="button" aria-label="Увеличить значение" tabindex="-1">
+              <svg class="icon icon--angle-up">
+                <use xlink:href="./images/sprite.svg#angle-up"></use>
+              </svg>
+            </button>
+            <button
+              class="input-fromto__btn input-fromto__btn--minus"
+              type="button"
+              aria-label="Уменьшить значение"
+              tabindex="-1"
+            >
+              <svg class="icon icon--angle-down">
+                <use xlink:href="./images/sprite.svg#angle-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <svg class="icon icon--minus input-fromto__separator">
+          <use xlink:href="./images/sprite.svg#minus"></use>
+        </svg>
+        <div class="input-fromto__field">
+          <input
+            class="input-fromto__input input-fromto__input--to"
+            type="number"
+            name="duration-to"
+            min="0"
+            max="1000"
+            placeholder="До"
+          />
+          <div class="input-fromto__buttons">
+            <button class="input-fromto__btn input-fromto__btn--plus" type="button" aria-label="Увеличить значение" tabindex="-1">
+              <svg class="icon icon--angle-up">
+                <use xlink:href="./images/sprite.svg#angle-up"></use>
+              </svg>
+            </button>
+            <button
+              class="input-fromto__btn input-fromto__btn--minus"
+              type="button"
+              aria-label="Уменьшить значение"
+              tabindex="-1"
+            >
+              <svg class="icon icon--angle-down">
+                <use xlink:href="./images/sprite.svg#angle-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <span class="field__title">Годы</span>
+      <div class="input-fromto" data-name="year">
+        <div class="input-fromto__field">
+          <input
+            class="input-fromto__input input-fromto__input--from"
+            type="number"
+            name="year-from"
+            min="0"
+            max="3000"
+            placeholder="От"
+          />
+          <div class="input-fromto__buttons">
+            <button class="input-fromto__btn input-fromto__btn--plus" type="button" aria-label="Увеличить значение" tabindex="-1">
+              <svg class="icon icon--angle-up">
+                <use xlink:href="./images/sprite.svg#angle-up"></use>
+              </svg>
+            </button>
+            <button
+              class="input-fromto__btn input-fromto__btn--minus"
+              type="button"
+              aria-label="Уменьшить значение"
+              tabindex="-1"
+            >
+              <svg class="icon icon--angle-down">
+                <use xlink:href="./images/sprite.svg#angle-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <svg class="icon icon--minus input-fromto__separator">
+          <use xlink:href="./images/sprite.svg#minus"></use>
+        </svg>
+        <div class="input-fromto__field">
+          <input
+            class="input-fromto__input input-fromto__input--to"
+            type="number"
+            name="year-to"
+            min="0"
+            max="3000"
+            placeholder="До"
+          />
+          <div class="input-fromto__buttons">
+            <button class="input-fromto__btn input-fromto__btn--plus" type="button" aria-label="Увеличить значение" tabindex="-1">
+              <svg class="icon icon--angle-up">
+                <use xlink:href="./images/sprite.svg#angle-up"></use>
+              </svg>
+            </button>
+            <button
+              class="input-fromto__btn input-fromto__btn--minus"
+              type="button"
+              aria-label="Уменьшить значение"
+              tabindex="-1"
+            >
+              <svg class="icon icon--angle-down">
+                <use xlink:href="./images/sprite.svg#angle-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <span class="field__title">Режиссер</span>
+      <div class="dropdown-single" data-name="director">
+        <button class="dropdown-single__trigger" type="button">
+          <svg class="icon icon--angle-down dropdown-single__trigger-icon">
+            <use xlink:href="./images/sprite.svg#angle-down"></use>
+          </svg>
+          <span class="dropdown-single__placeholder">Не выбрано</span>
+          <span class="dropdown-single__value" style="display: none"></span>
+        </button>
+        <ul class="dropdown-single__list">
+          <li class="dropdown-single__list-item" data-value="director_1">
+            <span class="dropdown-single__label">Режиссер</span>
+          </li>
+          <li class="dropdown-single__list-item" data-value="director_2">
+            <span class="dropdown-single__label">Режиссер 2</span>
+          </li>
+          <li class="dropdown-single__list-item" data-value="director_3">
+            <span class="dropdown-single__label">Режиссер 3</span>
+          </li>
+          <li class="dropdown-single__list-item" data-value="director_4">
+            <span class="dropdown-single__label">Режиссер 4</span>
+          </li>
+        </ul>
+        <input type="hidden" class="dropdown-single__input-hidden" name="director" />
+      </div>
+    </div>
+    <div class="field">
+      <span class="field__title">Сценарист</span>
+      <div class="dropdown-single" data-name="screenwriter">
+        <button class="dropdown-single__trigger" type="button">
+          <svg class="icon icon--angle-down dropdown-single__trigger-icon">
+            <use xlink:href="./images/sprite.svg#angle-down"></use>
+          </svg>
+          <span class="dropdown-single__placeholder">Не выбрано</span>
+          <span class="dropdown-single__value" style="display: none"></span>
+        </button>
+        <ul class="dropdown-single__list">
+          <li class="dropdown-single__list-item" data-value="screenwriter_1">
+            <span class="dropdown-single__label">Сценарист</span>
+          </li>
+          <li class="dropdown-single__list-item" data-value="screenwriter_2">
+            <span class="dropdown-single__label">Сценарист 2</span>
+          </li>
+          <li class="dropdown-single__list-item" data-value="screenwriter_3">
+            <span class="dropdown-single__label">Сценарист 3</span>
+          </li>
+          <li class="dropdown-single__list-item" data-value="screenwriter_4">
+            <span class="dropdown-single__label">Сценарист 4</span>
+          </li>
+        </ul>
+        <input type="hidden" class="dropdown-single__input-hidden" name="screenwriter" />
+      </div>
+    </div>
+    <div class="field">
+      <span class="field__title">Ограничение 18+</span>
+      <div class="dropdown-single" data-name="restriction">
+        <button class="dropdown-single__trigger" type="button">
+          <svg class="icon icon--angle-down dropdown-single__trigger-icon">
+            <use xlink:href="./images/sprite.svg#angle-down"></use>
+          </svg>
+          <span class="dropdown-single__placeholder">Не выбрано</span>
+          <span class="dropdown-single__value" style="display: none"></span>
+        </button>
+        <ul class="dropdown-single__list">
+          <li class="dropdown-single__list-item" data-value="yes" data-selected>
+            <span class="dropdown-single__label">Да</span>
+          </li>
+          <li class="dropdown-single__list-item" data-value="no">
+            <span class="dropdown-single__label">Нет</span>
+          </li>
+        </ul>
+        <input type="hidden" class="dropdown-single__input-hidden" name="restriction" />
+      </div>
+    </div>
+  </div>
+  <div class="filter-actions">
+    <button class="btn--text filter__btn-more filter__btn-show" type="button" data-js-filter-more-show>
+      <svg class="icon icon--filter">
+        <use xlink:href="./images/sprite.svg#filter"></use>
+      </svg>
+      <span>Все фильтры</span>
+    </button>
+    <div class="filter-actions-more filter-more" data-js-filter-more-actions>
+      <button class="btn--text filter__btn-more" type="button" data-js-filter-more-hide>
+        <svg class="icon icon--filter">
+          <use xlink:href="./images/sprite.svg#filter"></use>
+        </svg>
+        <span>Скрыть фильтры</span>
+      </button>
+      <button class="btn--text filter__btn-clear" type="button" data-js-filter-clear>
+        <svg class="icon icon--close">
+          <use xlink:href="./images/sprite.svg#close"></use>
+        </svg>
+        <span>Очистить фильтр</span>
+      </button>
+    </div>
+  </div>
+</form>
+</div>
+              <div class="publications__body">
+                <div class="publications__items">
+                  <!-- prettier-ignore -->
+                  <div class="publications__item">
+  <div class="publications__item-header">
+    <div class="publications__item-content">
+      <h2 class="publications__item-title">Purdue Boilermakers vs. Maryland Terrapins</h2>
+      <div class="badges">
+        <span class="badge badge--type">tvEpisode</span>
+        <span class="badge">Animation</span>
+        <span class="badge">Comedy</span>
+        <span class="badge">Romance</span>
+        <span class="badge badge--year">2008 г.</span>
+        <span class="badge badge--rating">
+          <svg class="icon icon--star-fill">
+            <use xlink:href="./images/sprite.svg#star-fill"></use>
+          </svg>
+          6.4 / 10 (2270)
+        </span>
+        <span class="badge badge--age">18+</span>
+        <span class="badge badge--time">45 мин.</span>
+        <span class="badge">tt0000003</span>
+      </div>
+    </div>
+    <div class="publications__item-actions">
+      <a class="btn btn--stroke btn--sm" href="#!">
+        <svg class="icon icon--link">
+          <use xlink:href="./images/sprite.svg#link"></use>
+        </svg>
+        <span>Ссылка на фильм</span>
+      </a>
+      <button class="btn btn--stroke btn--sm" data-js-modal-open data-js-modal-path="history-change">
+        <svg class="icon icon--history">
+          <use xlink:href="./images/sprite.svg#history"></use>
+        </svg>
+        <span>История измений</span>
+      </button>
+      <button class="btn btn--sm" data-js-modal-open data-js-modal-path="movie-details">
+        <svg class="icon icon--more">
+          <use xlink:href="./images/sprite.svg#more"></use>
+        </svg>
+      </button>
+      <button class="btn btn--sm" data-js-modal-open data-js-modal-path="link-channel">
+        <span>Привязать к каналу</span>
+      </button>
+    </div>
+  </div>
+</div>
+ 
+                  <div class="publications__item">
+  <div class="publications__item-header">
+    <div class="publications__item-content">
+      <h2 class="publications__item-title">Purdue Boilermakers vs. Maryland Terrapins</h2>
+      <div class="badges">
+        <span class="badge badge--type">tvEpisode</span>
+        <span class="badge">Animation</span>
+        <span class="badge">Comedy</span>
+        <span class="badge">Romance</span>
+        <span class="badge badge--year">2008 г.</span>
+        <span class="badge badge--rating">
+          <svg class="icon icon--star-fill">
+            <use xlink:href="./images/sprite.svg#star-fill"></use>
+          </svg>
+          6.4 / 10 (2270)
+        </span>
+        <span class="badge badge--age">18+</span>
+        <span class="badge badge--time">45 мин.</span>
+        <span class="badge">tt0000003</span>
+      </div>
+    </div>
+    <div class="publications__item-actions">
+      <a class="btn btn--stroke btn--sm" href="#!">
+        <svg class="icon icon--link">
+          <use xlink:href="./images/sprite.svg#link"></use>
+        </svg>
+        <span>Ссылка на фильм</span>
+      </a>
+      <button class="btn btn--stroke btn--sm" data-js-modal-open data-js-modal-path="history-change">
+        <svg class="icon icon--history">
+          <use xlink:href="./images/sprite.svg#history"></use>
+        </svg>
+        <span>История измений</span>
+      </button>
+      <button class="btn btn--sm" data-js-modal-open data-js-modal-path="movie-details">
+        <svg class="icon icon--more">
+          <use xlink:href="./images/sprite.svg#more"></use>
+        </svg>
+      </button>
+      <button class="btn btn--sm" data-js-modal-open data-js-modal-path="link-channel-not">
+        <span>Привязать к каналу</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+                  <div class="publications__item">
+  <div class="publications__item-header">
+    <div class="publications__item-content">
+      <h2 class="publications__item-title">Purdue Boilermakers vs. Maryland Terrapins</h2>
+      <div class="badges">
+        <span class="badge badge--type">tvEpisode</span>
+        <span class="badge">Animation</span>
+        <span class="badge">Comedy</span>
+        <span class="badge">Romance</span>
+        <span class="badge badge--year">2008 г.</span>
+        <span class="badge badge--rating">
+          <svg class="icon icon--star-fill">
+            <use xlink:href="./images/sprite.svg#star-fill"></use>
+          </svg>
+          6.4 / 10 (2270)
+        </span>
+        <span class="badge badge--age">18+</span>
+        <span class="badge badge--time">45 мин.</span>
+        <span class="badge">tt0000003</span>
+      </div>
+    </div>
+    <div class="publications__item-actions">
+      <a class="btn btn--stroke btn--sm" href="#!">
+        <svg class="icon icon--link">
+          <use xlink:href="./images/sprite.svg#link"></use>
+        </svg>
+        <span>Ссылка на фильм</span>
+      </a>
+      <button class="btn btn--stroke btn--sm" data-js-modal-open data-js-modal-path="history-change">
+        <svg class="icon icon--history">
+          <use xlink:href="./images/sprite.svg#history"></use>
+        </svg>
+        <span>История измений</span>
+      </button>
+      <button class="btn btn--sm" data-js-modal-open data-js-modal-path="movie-details">
+        <svg class="icon icon--more">
+          <use xlink:href="./images/sprite.svg#more"></use>
+        </svg>
+      </button>
+      <button class="btn btn--sm" data-js-modal-open data-js-modal-path="link-channel">
+        <span>Привязать к каналу</span>
+      </button>
+    </div>
+  </div>
+</div>
+ 
+                  <div class="publications__item">
+  <div class="publications__item-header">
+    <div class="publications__item-content">
+      <h2 class="publications__item-title">Purdue Boilermakers vs. Maryland Terrapins</h2>
+      <div class="badges">
+        <span class="badge badge--type">tvEpisode</span>
+        <span class="badge">Animation</span>
+        <span class="badge">Comedy</span>
+        <span class="badge">Romance</span>
+        <span class="badge badge--year">2008 г.</span>
+        <span class="badge badge--rating">
+          <svg class="icon icon--star-fill">
+            <use xlink:href="./images/sprite.svg#star-fill"></use>
+          </svg>
+          6.4 / 10 (2270)
+        </span>
+        <span class="badge badge--age">18+</span>
+        <span class="badge badge--time">45 мин.</span>
+        <span class="badge">tt0000003</span>
+      </div>
+    </div>
+    <div class="publications__item-actions">
+      <a class="btn btn--stroke btn--sm" href="#!">
+        <svg class="icon icon--link">
+          <use xlink:href="./images/sprite.svg#link"></use>
+        </svg>
+        <span>Ссылка на фильм</span>
+      </a>
+      <button class="btn btn--stroke btn--sm" data-js-modal-open data-js-modal-path="history-change">
+        <svg class="icon icon--history">
+          <use xlink:href="./images/sprite.svg#history"></use>
+        </svg>
+        <span>История измений</span>
+      </button>
+      <button class="btn btn--sm" data-js-modal-open data-js-modal-path="movie-details">
+        <svg class="icon icon--more">
+          <use xlink:href="./images/sprite.svg#more"></use>
+        </svg>
+      </button>
+      <button class="btn btn--sm" data-js-modal-open data-js-modal-path="link-channel-not">
+        <span>Привязать к каналу</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+                  <div class="publications__item">
+  <div class="publications__item-header">
+    <div class="publications__item-content">
+      <h2 class="publications__item-title">Purdue Boilermakers vs. Maryland Terrapins</h2>
+      <div class="badges">
+        <span class="badge badge--type">tvEpisode</span>
+        <span class="badge">Animation</span>
+        <span class="badge">Comedy</span>
+        <span class="badge">Romance</span>
+        <span class="badge badge--year">2008 г.</span>
+        <span class="badge badge--rating">
+          <svg class="icon icon--star-fill">
+            <use xlink:href="./images/sprite.svg#star-fill"></use>
+          </svg>
+          6.4 / 10 (2270)
+        </span>
+        <span class="badge badge--age">18+</span>
+        <span class="badge badge--time">45 мин.</span>
+        <span class="badge">tt0000003</span>
+      </div>
+    </div>
+    <div class="publications__item-actions">
+      <a class="btn btn--stroke btn--sm" href="#!">
+        <svg class="icon icon--link">
+          <use xlink:href="./images/sprite.svg#link"></use>
+        </svg>
+        <span>Ссылка на фильм</span>
+      </a>
+      <button class="btn btn--stroke btn--sm" data-js-modal-open data-js-modal-path="history-change">
+        <svg class="icon icon--history">
+          <use xlink:href="./images/sprite.svg#history"></use>
+        </svg>
+        <span>История измений</span>
+      </button>
+      <button class="btn btn--sm" data-js-modal-open data-js-modal-path="movie-details">
+        <svg class="icon icon--more">
+          <use xlink:href="./images/sprite.svg#more"></use>
+        </svg>
+      </button>
+      <button class="btn btn--sm" data-js-modal-open data-js-modal-path="link-channel">
+        <span>Привязать к каналу</span>
+      </button>
+    </div>
+  </div>
+</div>
+ 
+                  <div class="publications__item">
+  <div class="publications__item-header">
+    <div class="publications__item-content">
+      <h2 class="publications__item-title">Purdue Boilermakers vs. Maryland Terrapins</h2>
+      <div class="badges">
+        <span class="badge badge--type">tvEpisode</span>
+        <span class="badge">Animation</span>
+        <span class="badge">Comedy</span>
+        <span class="badge">Romance</span>
+        <span class="badge badge--year">2008 г.</span>
+        <span class="badge badge--rating">
+          <svg class="icon icon--star-fill">
+            <use xlink:href="./images/sprite.svg#star-fill"></use>
+          </svg>
+          6.4 / 10 (2270)
+        </span>
+        <span class="badge badge--age">18+</span>
+        <span class="badge badge--time">45 мин.</span>
+        <span class="badge">tt0000003</span>
+      </div>
+    </div>
+    <div class="publications__item-actions">
+      <a class="btn btn--stroke btn--sm" href="#!">
+        <svg class="icon icon--link">
+          <use xlink:href="./images/sprite.svg#link"></use>
+        </svg>
+        <span>Ссылка на фильм</span>
+      </a>
+      <button class="btn btn--stroke btn--sm" data-js-modal-open data-js-modal-path="history-change">
+        <svg class="icon icon--history">
+          <use xlink:href="./images/sprite.svg#history"></use>
+        </svg>
+        <span>История измений</span>
+      </button>
+      <button class="btn btn--sm" data-js-modal-open data-js-modal-path="movie-details">
+        <svg class="icon icon--more">
+          <use xlink:href="./images/sprite.svg#more"></use>
+        </svg>
+      </button>
+      <button class="btn btn--sm" data-js-modal-open data-js-modal-path="link-channel-not">
+        <span>Привязать к каналу</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+                  <div class="publications__item">
+  <div class="publications__item-header">
+    <div class="publications__item-content">
+      <h2 class="publications__item-title">Purdue Boilermakers vs. Maryland Terrapins</h2>
+      <div class="badges">
+        <span class="badge badge--type">tvEpisode</span>
+        <span class="badge">Animation</span>
+        <span class="badge">Comedy</span>
+        <span class="badge">Romance</span>
+        <span class="badge badge--year">2008 г.</span>
+        <span class="badge badge--rating">
+          <svg class="icon icon--star-fill">
+            <use xlink:href="./images/sprite.svg#star-fill"></use>
+          </svg>
+          6.4 / 10 (2270)
+        </span>
+        <span class="badge badge--age">18+</span>
+        <span class="badge badge--time">45 мин.</span>
+        <span class="badge">tt0000003</span>
+      </div>
+    </div>
+    <div class="publications__item-actions">
+      <a class="btn btn--stroke btn--sm" href="#!">
+        <svg class="icon icon--link">
+          <use xlink:href="./images/sprite.svg#link"></use>
+        </svg>
+        <span>Ссылка на фильм</span>
+      </a>
+      <button class="btn btn--stroke btn--sm" data-js-modal-open data-js-modal-path="history-change">
+        <svg class="icon icon--history">
+          <use xlink:href="./images/sprite.svg#history"></use>
+        </svg>
+        <span>История измений</span>
+      </button>
+      <button class="btn btn--sm" data-js-modal-open data-js-modal-path="movie-details">
+        <svg class="icon icon--more">
+          <use xlink:href="./images/sprite.svg#more"></use>
+        </svg>
+      </button>
+      <button class="btn btn--sm" data-js-modal-open data-js-modal-path="link-channel">
+        <span>Привязать к каналу</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+                </div>
+                <div class="loading">
+                  <span>Загрузка...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <h2>Version 1.0</h2>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <div class="modal" data-js-modal>
+  <!-- Оверлей -->
+  <div class="modal__overlay" data-js-modal-overlay></div>
+
+  <!-- Модальное окно -->
+  <div class="modal__content modal__movie-details" data-js-modal-item data-js-modal-path="movie-details">
+    <div class="modal__header">
+      <h2 class="modal__header-title">Детали фильма</h2>
+      <button class="modal__close" data-js-modal-close aria-label="Закрыть">
+        <svg class="icon icon--close">
+          <use xlink:href="./images/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="modal__body scroll">
+      <div class="movie-details">
+        <div class="movie-details__box movie-details__info">
+          <div class="movie-details__stauts">
+            <span class="movie-details__stauts-title">Статус</span>
+            <div class="dropdown-single dropdown-single--status " data-name="movie-status">
+  <button class="dropdown-single__trigger" type="button">
+    <svg class="icon icon--angle-down dropdown-single__trigger-icon">
+      <use xlink:href="./images/sprite.svg#angle-down"></use>
+    </svg>
+    <span class="dropdown-single__placeholder">Не выбрано</span>
+    <span class="dropdown-single__value" style="display: none"></span>
+  </button>
+  <ul class="dropdown-single__list">
+    <li class="dropdown-single__list-item" data-value="status-no-status" data-selected>
+      <span class="dropdown-single__label">
+        <div class="status-item" style="color: #3a3f45">
+          <svg class="icon icon--stop">
+            <use xlink:href="./images/sprite.svg#stop"></use>
+          </svg>
+          <span>Нет статуса</span>
+        </div>
+      </span>
+    </li>
+    <li class="dropdown-single__list-item" data-value="status-at-work">
+      <span class="dropdown-single__label">
+        <div class="status-item" style="color: #005bff">
+          <svg class="icon icon--loading">
+            <use xlink:href="./images/sprite.svg#loading"></use>
+          </svg>
+          <span>В работе</span>
+        </div>
+      </span>
+    </li>
+    <li class="dropdown-single__list-item" data-value="status-under-review">
+      <span class="dropdown-single__label">
+        <div class="status-item" style="color: #00a2ff">
+          <svg class="icon icon--clock">
+            <use xlink:href="./images/sprite.svg#clock"></use>
+          </svg>
+          <span>На проверке</span>
+        </div>
+      </span>
+    </li>
+    <li class="dropdown-single__list-item" data-value="status-under-revision">
+      <span class="dropdown-single__label">
+        <div class="status-item" style="color: #ffa800">
+          <svg class="icon icon--alert">
+            <use xlink:href="./images/sprite.svg#alert"></use>
+          </svg>
+          <span>На доработке</span>
+        </div>
+      </span>
+    </li>
+    <li class="dropdown-single__list-item" data-value="status-ready">
+      <span class="dropdown-single__label">
+        <div class="status-item" style="color: #10c44c">
+          <svg class="icon icon--check-circle">
+            <use xlink:href="./images/sprite.svg#check-circle"></use>
+          </svg>
+          <span>Готов к публикации</span>
+        </div>
+      </span>
+    </li>
+    <li class="dropdown-single__list-item" data-value="status-rejected">
+      <span class="dropdown-single__label">
+        <div class="status-item" style="color: #f53c14">
+          <svg class="icon icon--close-circle">
+            <use xlink:href="./images/sprite.svg#close-circle"></use>
+          </svg>
+          <span>Отклонен</span>
+        </div>
+      </span>
+    </li>
+  </ul>
+  <input type="hidden" class="dropdown-single__input-hidden" name="movie-status" />
+</div>
+
+          </div>
+          <div class="movie-details__info-box">
+            <div class="movie-details__info-item">
+              <span>Полное имя</span>
+              <span class="movie-details__info-item-title" title="VLADIMIR SHAGINOV">VLADIMIR SHAGINOV</span>
+            </div>
+            <div class="movie-details__info-item">
+              <span>Почта</span>
+              <span class="movie-details__info-item-title" title="shaginov1b@yandex.ru">shaginov1b@yandex.ru</span>
+            </div>
+            <div class="movie-details__info-item">
+              <span>Роль</span>
+              <span class="movie-details__info-item-title" title="Архивариус">Архивариус</span>
+            </div>
+          </div>
+          <div class="field">
+            <span class="field__title">Комментарий</span>
+            <label class="field__input-box">
+              <input
+                class="field__input _no-active"
+                type="text"
+                name="movie-details_comment"
+                placeholder="-"
+                readonly
+                data-js-edit-input="movie-details"
+                value=""
+              />
+            </label>
+          </div>
+        </div>
+        <div class="movie-details__box movie-details__basedata">
+          <h3 class="movie-details__box-title">Базовые данные</h3>
+          <div class="movie-details__box-inputs">
+            <!-- prettier-ignore -->
+            <div class="field">
+  <span class="field__title">IMDb ID</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_imdbid"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value="tt0000003"
+      autocomplete="off"
+    />
+  </label>
+</div>
+
+            <div class="field">
+  <span class="field__title">Тип</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_type"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value="txEpisode"
+      autocomplete="off"
+    />
+  </label>
+</div>
+
+            <div class="field">
+  <span class="field__title">Название</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_name"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value="Poor Pierrot"
+      autocomplete="off"
+    />
+  </label>
+</div>
+
+            <div class="field">
+  <span class="field__title">Оригинальное название</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_orig-name"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value="Pauvre Pierrot"
+      autocomplete="off"
+    />
+  </label>
+</div>
+ <div class="field">
+  <span class="field__title">Годы</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_year"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value=""
+      autocomplete="off"
+    />
+  </label>
+</div>
+
+            <div class="field">
+  <span class="field__title">Длительность</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_duration"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value="45 мин"
+      autocomplete="off"
+    />
+  </label>
+</div>
+
+            <div class="field">
+  <span class="field__title">Рейтинг</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_rating"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value="6.4 / 10 (2270)"
+      autocomplete="off"
+    />
+  </label>
+</div>
+
+            <div class="field">
+  <span class="field__title">Возраст</span>
+  <label class="checkbox checkbox-edit-yesno">
+    <input class="checkbox__input _no-active" type="checkbox" name="movie-details_age" data-js-edit-input="movie-details" checked />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <div class="checkbox__label">
+      <span class="checkbox-edit-yesno__yes">18+</span>
+      <span class="checkbox-edit-yesno__no">-</span>
+    </div>
+  </label>
+</div>
+
+          </div>
+          <div class="field">
+            <span class="field__title">Жанр</span>
+            <div class="movie-details__box-checkboxes _no-active" readonly data-js-edit-input="movie-details">
+              <span class="checkboxes-diver">-</span>
+              <!-- prettier-ignore -->
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Thriller"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Thriller</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Reality-TV" checked />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Reality-TV</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Fantasy"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Fantasy</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Mystery"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Mystery</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Action"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Action</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Talk-Show"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Talk-Show</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Romance"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Romance</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Comedy"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Comedy</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_News" checked />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">News</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Horror"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Horror</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Biography"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Biography</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_War"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">War</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Family"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Family</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Adventure"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Adventure</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Game-Show"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Game-Show</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Short"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Short</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Animation"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Animation</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Adult"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Adult</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_History"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">History</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Sport"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Sport</span>
+  </div>
+</label>
+
+            </div>
+          </div>
+          <div class="movie-details__box-inputs">
+            <div class="field">
+              <span class="field__title">Режиссер</span>
+              <label class="field__input-box">
+                <input
+                  class="field__input _no-active"
+                  type="text"
+                  name="movie-details_director"
+                  placeholder="-"
+                  readonly
+                  value="Émile Reynaud"
+                  autocomplete="off"
+                />
+              </label>
+            </div>
+            <div class="field">
+              <span class="field__title">Сценарист</span>
+              <label class="field__input-box">
+                <input
+                  class="field__input _no-active"
+                  type="text"
+                  name="movie-details_director"
+                  placeholder="-"
+                  readonly
+                  value="Émile Reynaud"
+                  autocomplete="off"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="movie-details__basedata-boxes">
+            <span class="field__title">Альтернативные названия</span>
+            <div class="movie-details__basedata-boxes-items">
+              <div class="movie-details__basedata-boxes-item">
+                <div class="movie-details__basedata-boxes-item-info">
+                  <span class="movie-details__basedata-boxes-item-title">Pauvre Pierrot</span>
+                  <span>Регион: JP • Язык: ja • Порядок: 11</span>
+                </div>
+                <div class="movie-details__basedata-boxes-item-badges">
+                  <span class="badge badge--blue">original</span>
+                  <span class="badge badge--green">Оригинальное</span>
+                </div>
+              </div>
+              <div class="movie-details__basedata-boxes-item">
+                <div class="movie-details__basedata-boxes-item-info">
+                  <span class="movie-details__basedata-boxes-item-title">Бідний П'єро</span>
+                  <span>Регион: JP • Язык: ja • Порядок: 11</span>
+                </div>
+                <div class="movie-details__basedata-boxes-item-badges">
+                  <span class="badge badge--blue">imdbDisplay</span>
+                  <span class="badge badge--red">Не оригинальное</span>
+                </div>
+              </div>
+              <div class="movie-details__basedata-boxes-item">
+                <div class="movie-details__basedata-boxes-item-info">
+                  <span class="movie-details__basedata-boxes-item-title">哀れなピエロ</span>
+                  <span>Регион: JP • Язык: ja • Порядок: 11</span>
+                </div>
+                <div class="movie-details__basedata-boxes-item-badges">
+                  <span class="badge badge--blue">imdbDisplay</span>
+                  <span class="badge badge--red">Не оригинальное</span>
+                </div>
+              </div>
+              <div class="movie-details__basedata-boxes-item">
+                <div class="movie-details__basedata-boxes-item-info">
+                  <span class="movie-details__basedata-boxes-item-title">Poor Pierrot</span>
+                  <span>Регион: JP • Язык: ja • Порядок: 11</span>
+                </div>
+                <div class="movie-details__basedata-boxes-item-badges">
+                  <span class="badge badge--blue">imdbDisplay</span>
+                  <span class="badge badge--red">Не оригинальное</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-details__box movie-details__techdata">
+          <h3 class="movie-details__box-title">Технические данные</h3>
+          <div class="movie-details__box-inputs">
+            <!-- prettier-ignore -->
+            <div class="field">
+  <span class="field__title">Лицензия</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_license"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value=""
+      autocomplete="off"
+    />
+  </label>
+</div>
+
+            <div class="field">
+  <span class="field__title">Язык аудио</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_lang"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value=""
+      autocomplete="off"
+    />
+  </label>
+</div>
+
+            <div class="field">
+  <span class="field__title">Наличие субтитров</span>
+  <label class="checkbox checkbox-edit-yesno">
+    <input class="checkbox__input _no-active" type="checkbox" name="movie-details_sub" data-js-edit-input="movie-details"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <div class="checkbox__label">
+      <span class="checkbox-edit-yesno__yes">Есть</span>
+      <span class="checkbox-edit-yesno__no">Нет</span>
+    </div>
+  </label>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal__footer">
+      <a class="btn btn--stroke" href="#!">
+        <svg class="icon icon--link">
+          <use xlink:href="./images/sprite.svg#link"></use>
+        </svg>
+        <span>Ссылка на фильм</span>
+      </a>
+      <div class="btns" data-js-edit-start-btns="movie-details">
+        <button class="btn" data-js-edit-start="movie-details">
+          <span>Редактировать</span>
+        </button>
+      </div>
+      <div class="btns hide" data-js-edit-end-btns="movie-details">
+        <button class="btn btn--stroke" data-js-edit-end="movie-details">
+          <span>Отменить</span>
+        </button>
+        <button class="btn" data-js-edit-end="movie-details">
+          <span>Сохранить</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Добавьте другие модальные окна по необходимости -->
+  <div class="modal__content modal__history-change" data-js-modal-item data-js-modal-path="history-change">
+    <div class="modal__header">
+      <h2 class="modal__header-title">История изменений</h2>
+      <button class="modal__close" data-js-modal-close aria-label="Закрыть">
+        <svg class="icon icon--close">
+          <use xlink:href="./images/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="modal__body">
+      <div class="history-change__header">
+        <span class="history-change__dated">Episode dated 11 June 2016 (tt5847472)</span>
+        <span class="history-change__count">Всего изменений: 3</span>
+      </div>
+      <div class="history-change__items scroll">
+        <div class="history-change__item">
+          <div class="history-change__item-header">
+            <div class="history-change__author">
+              <span>Изменил:</span>
+              <span class="history-change__author-name">Ольга Кузнецова</span>
+              <svg width="4" height="4" viewBox="0 0 4 4" fill="#1A1D21" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="2" cy="2" r="2" fill="#1A1D21" />
+              </svg>
+              <span class="history-change__author-mail">lollykuz@gmail.com</span>
+            </div>
+            <span class="history-change__date">10.12.2025, 14:25:02</span>
+          </div>
+          <div class="history-change__item-body">
+            <div class="history-change__item-box">
+              <span class="history-change__item-box-title">Статус архивариуса</span>
+              <div class="history-change__item-box-values">
+                <div class="history-change__item-box-value">
+                  <span class="history-change__item-box-subtitle">Старое значение:</span>
+                  <span class="history-change__item-box-value-old">Нет статуса</span>
+                </div>
+                <div class="history-change__item-box-value">
+                  <span class="history-change__item-box-subtitle">Новое значение:</span>
+                  <span class="history-change__item-box-value-new">В работе</span>
+                </div>
+              </div>
+            </div>
+            <div class="history-change__item-box">
+              <span class="history-change__item-box-title">Комментарии</span>
+              <div class="history-change__item-box-values">
+                <div class="history-change__item-box-value">
+                  <span class="history-change__item-box-subtitle">Старое значение:</span>
+                  <span class="history-change__item-box-value-old">(пусто)</span>
+                </div>
+                <div class="history-change__item-box-value">
+                  <span class="history-change__item-box-subtitle">Новое значение:</span>
+                  <span class="history-change__item-box-value-new">Тестирование</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="history-change__item">
+          <div class="history-change__item-header">
+            <div class="history-change__author">
+              <span>Изменил:</span>
+              <span class="history-change__author-name">Ольга Кузнецова</span>
+              <svg width="4" height="4" viewBox="0 0 4 4" fill="#1A1D21" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="2" cy="2" r="2" fill="#1A1D21" />
+              </svg>
+              <span class="history-change__author-mail">lollykuz@gmail.com</span>
+            </div>
+            <span class="history-change__date">10.12.2025, 14:25:02</span>
+          </div>
+          <div class="history-change__item-body">
+            <div class="history-change__item-box">
+              <span class="history-change__item-box-title">Статус архивариуса</span>
+              <div class="history-change__item-box-values">
+                <div class="history-change__item-box-value">
+                  <span class="history-change__item-box-subtitle">Старое значение:</span>
+                  <span class="history-change__item-box-value-old">Нет статуса</span>
+                </div>
+                <div class="history-change__item-box-value">
+                  <span class="history-change__item-box-subtitle">Новое значение:</span>
+                  <span class="history-change__item-box-value-new">В работе</span>
+                </div>
+              </div>
+            </div>
+            <div class="history-change__item-box">
+              <span class="history-change__item-box-title">Комментарии</span>
+              <div class="history-change__item-box-values">
+                <div class="history-change__item-box-value">
+                  <span class="history-change__item-box-subtitle">Старое значение:</span>
+                  <span class="history-change__item-box-value-old">(пусто)</span>
+                </div>
+                <div class="history-change__item-box-value">
+                  <span class="history-change__item-box-subtitle">Новое значение:</span>
+                  <span class="history-change__item-box-value-new">Тестирование</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="history-change__item">
+          <div class="history-change__item-header">
+            <div class="history-change__author">
+              <span>Изменил:</span>
+              <span class="history-change__author-name">Ольга Кузнецова</span>
+              <svg width="4" height="4" viewBox="0 0 4 4" fill="#1A1D21" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="2" cy="2" r="2" fill="#1A1D21" />
+              </svg>
+              <span class="history-change__author-mail">lollykuz@gmail.com</span>
+            </div>
+            <span class="history-change__date">10.12.2025, 14:25:02</span>
+          </div>
+          <div class="history-change__item-body">
+            <div class="history-change__item-box">
+              <span class="history-change__item-box-title">Статус архивариуса</span>
+              <div class="history-change__item-box-values">
+                <div class="history-change__item-box-value">
+                  <span class="history-change__item-box-subtitle">Старое значение:</span>
+                  <span class="history-change__item-box-value-old">Нет статуса</span>
+                </div>
+                <div class="history-change__item-box-value">
+                  <span class="history-change__item-box-subtitle">Новое значение:</span>
+                  <span class="history-change__item-box-value-new">В работе</span>
+                </div>
+              </div>
+            </div>
+            <div class="history-change__item-box">
+              <span class="history-change__item-box-title">Комментарии</span>
+              <div class="history-change__item-box-values">
+                <div class="history-change__item-box-value">
+                  <span class="history-change__item-box-subtitle">Старое значение:</span>
+                  <span class="history-change__item-box-value-old">(пусто)</span>
+                </div>
+                <div class="history-change__item-box-value">
+                  <span class="history-change__item-box-subtitle">Новое значение:</span>
+                  <span class="history-change__item-box-value-new">Тестирование</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal__content modal__link-channel" data-js-modal-item data-js-modal-path="link-channel">
+    <div class="modal__header">
+      <h2 class="modal__header-title">Привязать к каналу</h2>
+      <button class="modal__close" data-js-modal-close aria-label="Закрыть">
+        <svg class="icon icon--close">
+          <use xlink:href="./images/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="modal__body scroll">
+      <div class="link-channel__items">
+        <!-- prettier-ignore -->
+        <div class="link-channel__item _active" data-js-toggler="link-channel">
+  <div class="link-channel__item-image">
+    <img src="./images/icons/icon-movie.png" alt="" />
+  </div>
+  <div class="link-channel__item-info">
+    <span class="link-channel__item-title">EchoFilm</span>
+    <div class="link-channel__item-author">
+      <span class="link-channel__item-name">Ольга Кузнецова</span>
+      <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="2" cy="2" r="2" fill="#3A3F45" />
+      </svg>
+      <span class="link-channel__item-mail">lollykuz@gmail.com</span>
+    </div>
+  </div>
+</div>
+
+        <div class="link-channel__item " data-js-toggler="link-channel">
+  <div class="link-channel__item-image">
+    <img src="./images/icons/icon-movie.png" alt="" />
+  </div>
+  <div class="link-channel__item-info">
+    <span class="link-channel__item-title">EchoFilm</span>
+    <div class="link-channel__item-author">
+      <span class="link-channel__item-name">Ольга Кузнецова</span>
+      <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="2" cy="2" r="2" fill="#3A3F45" />
+      </svg>
+      <span class="link-channel__item-mail">lollykuz@gmail.com</span>
+    </div>
+  </div>
+</div>
+
+        <div class="link-channel__item " data-js-toggler="link-channel">
+  <div class="link-channel__item-image">
+    <img src="./images/icons/icon-movie.png" alt="" />
+  </div>
+  <div class="link-channel__item-info">
+    <span class="link-channel__item-title">EchoFilm</span>
+    <div class="link-channel__item-author">
+      <span class="link-channel__item-name">Ольга Кузнецова</span>
+      <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="2" cy="2" r="2" fill="#3A3F45" />
+      </svg>
+      <span class="link-channel__item-mail">lollykuz@gmail.com</span>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <div class="modal__footer">
+      <div class="btns">
+        <button class="btn btn--stroke" data-js-modal-close>
+          <span>Отменить</span>
+        </button>
+        <button class="btn" data-js-modal-close>
+          <span>Привязать</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="modal__content modal__link-channel" data-js-modal-item data-js-modal-path="link-channel-not">
+    <div class="modal__header">
+      <h2 class="modal__header-title">Привязать к каналу</h2>
+      <button class="modal__close" data-js-modal-close aria-label="Закрыть">
+        <svg class="icon icon--close">
+          <use xlink:href="./images/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="modal__body">
+      <div class="link-channel__content-not">
+        <span>У вас нет доступных каналов для привязки</span>
+      </div>
+    </div>
+  </div>
+  <div class="modal__content modal__movie-details" data-js-modal-item data-js-modal-path="movie-details-adm">
+    <div class="modal__header">
+      <h2 class="modal__header-title">Детали фильма</h2>
+      <button class="modal__close" data-js-modal-close aria-label="Закрыть">
+        <svg class="icon icon--close">
+          <use xlink:href="./images/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="modal__body scroll">
+      <div class="movie-details">
+        <div class="movie-details__box movie-details__info">
+          <div class="movie-details__stauts">
+            <span class="movie-details__stauts-title">Статус</span>
+            <div class="dropdown-single dropdown-single--status " data-name="movie-status">
+  <button class="dropdown-single__trigger" type="button">
+    <svg class="icon icon--angle-down dropdown-single__trigger-icon">
+      <use xlink:href="./images/sprite.svg#angle-down"></use>
+    </svg>
+    <span class="dropdown-single__placeholder">Не выбрано</span>
+    <span class="dropdown-single__value" style="display: none"></span>
+  </button>
+  <ul class="dropdown-single__list">
+    <li class="dropdown-single__list-item" data-value="status-no-status" data-selected>
+      <span class="dropdown-single__label">
+        <div class="status-item" style="color: #3a3f45">
+          <svg class="icon icon--stop">
+            <use xlink:href="./images/sprite.svg#stop"></use>
+          </svg>
+          <span>Нет статуса</span>
+        </div>
+      </span>
+    </li>
+    <li class="dropdown-single__list-item" data-value="status-at-work">
+      <span class="dropdown-single__label">
+        <div class="status-item" style="color: #005bff">
+          <svg class="icon icon--loading">
+            <use xlink:href="./images/sprite.svg#loading"></use>
+          </svg>
+          <span>В работе</span>
+        </div>
+      </span>
+    </li>
+    <li class="dropdown-single__list-item" data-value="status-under-review">
+      <span class="dropdown-single__label">
+        <div class="status-item" style="color: #00a2ff">
+          <svg class="icon icon--clock">
+            <use xlink:href="./images/sprite.svg#clock"></use>
+          </svg>
+          <span>На проверке</span>
+        </div>
+      </span>
+    </li>
+    <li class="dropdown-single__list-item" data-value="status-under-revision">
+      <span class="dropdown-single__label">
+        <div class="status-item" style="color: #ffa800">
+          <svg class="icon icon--alert">
+            <use xlink:href="./images/sprite.svg#alert"></use>
+          </svg>
+          <span>На доработке</span>
+        </div>
+      </span>
+    </li>
+    <li class="dropdown-single__list-item" data-value="status-ready">
+      <span class="dropdown-single__label">
+        <div class="status-item" style="color: #10c44c">
+          <svg class="icon icon--check-circle">
+            <use xlink:href="./images/sprite.svg#check-circle"></use>
+          </svg>
+          <span>Готов к публикации</span>
+        </div>
+      </span>
+    </li>
+    <li class="dropdown-single__list-item" data-value="status-rejected">
+      <span class="dropdown-single__label">
+        <div class="status-item" style="color: #f53c14">
+          <svg class="icon icon--close-circle">
+            <use xlink:href="./images/sprite.svg#close-circle"></use>
+          </svg>
+          <span>Отклонен</span>
+        </div>
+      </span>
+    </li>
+  </ul>
+  <input type="hidden" class="dropdown-single__input-hidden" name="movie-status" />
+</div>
+
+          </div>
+          <div class="movie-details__info-box">
+            <div class="movie-details__info-item">
+              <span>Полное имя</span>
+              <span class="movie-details__info-item-title" title="VLADIMIR SHAGINOV">VLADIMIR SHAGINOV</span>
+            </div>
+            <div class="movie-details__info-item">
+              <span>Почта</span>
+              <span class="movie-details__info-item-title" title="shaginov1b@yandex.ru">shaginov1b@yandex.ru</span>
+            </div>
+            <div class="movie-details__info-item">
+              <span>Роль</span>
+              <span class="movie-details__info-item-title" title="Архивариус">Архивариус</span>
+            </div>
+          </div>
+          <div class="field">
+            <span class="field__title">Комментарий</span>
+            <label class="field__input-box">
+              <input
+                class="field__input _no-active"
+                type="text"
+                name="movie-details_comment"
+                placeholder="-"
+                readonly
+                data-js-edit-input="movie-details"
+                value=""
+              />
+            </label>
+          </div>
+        </div>
+        <div class="movie-details__box movie-details__basedata">
+          <h3 class="movie-details__box-title">Базовые данные</h3>
+          <div class="movie-details__box-inputs">
+            <!-- prettier-ignore -->
+            <div class="field">
+  <span class="field__title">IMDb ID</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_imdbid"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value="tt0000003"
+      autocomplete="off"
+    />
+  </label>
+</div>
+
+            <div class="field">
+  <span class="field__title">Тип</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_type"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value="txEpisode"
+      autocomplete="off"
+    />
+  </label>
+</div>
+
+            <div class="field">
+  <span class="field__title">Название</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_name"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value="Poor Pierrot"
+      autocomplete="off"
+    />
+  </label>
+</div>
+
+            <div class="field">
+  <span class="field__title">Оригинальное название</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_orig-name"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value="Pauvre Pierrot"
+      autocomplete="off"
+    />
+  </label>
+</div>
+ <div class="field">
+  <span class="field__title">Годы</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_year"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value=""
+      autocomplete="off"
+    />
+  </label>
+</div>
+
+            <div class="field">
+  <span class="field__title">Длительность</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_duration"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value="45 мин"
+      autocomplete="off"
+    />
+  </label>
+</div>
+
+            <div class="field">
+  <span class="field__title">Рейтинг</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_rating"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value="6.4 / 10 (2270)"
+      autocomplete="off"
+    />
+  </label>
+</div>
+
+            <div class="field">
+  <span class="field__title">Возраст</span>
+  <label class="checkbox checkbox-edit-yesno">
+    <input class="checkbox__input _no-active" type="checkbox" name="movie-details_age" data-js-edit-input="movie-details" checked />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <div class="checkbox__label">
+      <span class="checkbox-edit-yesno__yes">18+</span>
+      <span class="checkbox-edit-yesno__no">-</span>
+    </div>
+  </label>
+</div>
+
+          </div>
+          <div class="field">
+            <span class="field__title">Жанр</span>
+            <div class="movie-details__box-checkboxes _no-active" readonly data-js-edit-input="movie-details">
+              <span class="checkboxes-diver">-</span>
+              <!-- prettier-ignore -->
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Thriller"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Thriller</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Reality-TV" checked />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Reality-TV</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Fantasy"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Fantasy</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Mystery"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Mystery</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Action"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Action</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Talk-Show"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Talk-Show</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Romance"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Romance</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Comedy"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Comedy</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_News" checked />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">News</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Horror"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Horror</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Biography"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Biography</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_War"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">War</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Family"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Family</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Adventure"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Adventure</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Game-Show"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Game-Show</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Short"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Short</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Animation"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Animation</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Adult"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Adult</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_History"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">History</span>
+  </div>
+</label>
+
+              <label class="field__input-box">
+  <div class="checkbox">
+    <input class="checkbox__input" type="checkbox" name="movie-details_Sport"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <span class="checkbox__label">Sport</span>
+  </div>
+</label>
+
+            </div>
+          </div>
+          <div class="movie-details__box-inputs">
+            <div class="field">
+              <span class="field__title">Режиссер</span>
+              <label class="field__input-box">
+                <input
+                  class="field__input _no-active"
+                  type="text"
+                  name="movie-details_director"
+                  placeholder="-"
+                  readonly
+                  value="Émile Reynaud"
+                  autocomplete="off"
+                />
+              </label>
+            </div>
+            <div class="field">
+              <span class="field__title">Сценарист</span>
+              <label class="field__input-box">
+                <input
+                  class="field__input _no-active"
+                  type="text"
+                  name="movie-details_director"
+                  placeholder="-"
+                  readonly
+                  value="Émile Reynaud"
+                  autocomplete="off"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="movie-details__basedata-boxes">
+            <span class="field__title">Альтернативные названия</span>
+            <div class="movie-details__basedata-boxes-items">
+              <div class="movie-details__basedata-boxes-item">
+                <div class="movie-details__basedata-boxes-item-info">
+                  <span class="movie-details__basedata-boxes-item-title">Pauvre Pierrot</span>
+                  <span>Регион: JP • Язык: ja • Порядок: 11</span>
+                </div>
+                <div class="movie-details__basedata-boxes-item-badges">
+                  <span class="badge badge--blue">original</span>
+                  <span class="badge badge--green">Оригинальное</span>
+                </div>
+              </div>
+              <div class="movie-details__basedata-boxes-item">
+                <div class="movie-details__basedata-boxes-item-info">
+                  <span class="movie-details__basedata-boxes-item-title">Бідний П'єро</span>
+                  <span>Регион: JP • Язык: ja • Порядок: 11</span>
+                </div>
+                <div class="movie-details__basedata-boxes-item-badges">
+                  <span class="badge badge--blue">imdbDisplay</span>
+                  <span class="badge badge--red">Не оригинальное</span>
+                </div>
+              </div>
+              <div class="movie-details__basedata-boxes-item">
+                <div class="movie-details__basedata-boxes-item-info">
+                  <span class="movie-details__basedata-boxes-item-title">哀れなピエロ</span>
+                  <span>Регион: JP • Язык: ja • Порядок: 11</span>
+                </div>
+                <div class="movie-details__basedata-boxes-item-badges">
+                  <span class="badge badge--blue">imdbDisplay</span>
+                  <span class="badge badge--red">Не оригинальное</span>
+                </div>
+              </div>
+              <div class="movie-details__basedata-boxes-item">
+                <div class="movie-details__basedata-boxes-item-info">
+                  <span class="movie-details__basedata-boxes-item-title">Poor Pierrot</span>
+                  <span>Регион: JP • Язык: ja • Порядок: 11</span>
+                </div>
+                <div class="movie-details__basedata-boxes-item-badges">
+                  <span class="badge badge--blue">imdbDisplay</span>
+                  <span class="badge badge--red">Не оригинальное</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-details__box movie-details__publicdata">
+          <h3 class="movie-details__box-title">Публикационные данные</h3>
+          <div class="movie-details__box-inputs">
+            <!-- prettier-ignore -->
+            <div class="field">
+  <span class="field__title">Описание для YouTube</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_descrYT"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value=""
+      autocomplete="off"
+    />
+  </label>
+</div>
+
+            <div class="field">
+  <span class="field__title">Хэштеги</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_hashtag"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value=""
+      autocomplete="off"
+    />
+  </label>
+</div>
+
+          </div>
+        </div>
+        <div class="movie-details__box movie-details__techdata">
+          <h3 class="movie-details__box-title">Технические данные</h3>
+          <div class="movie-details__box-inputs">
+            <!-- prettier-ignore -->
+            <div class="field">
+  <span class="field__title">Лицензия</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_license"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value=""
+      autocomplete="off"
+    />
+  </label>
+</div>
+
+            <div class="field">
+  <span class="field__title">Язык аудио</span>
+  <label class="field__input-box">
+    <input
+      class="field__input _no-active"
+      type="text"
+      name="movie-details_lang"
+      placeholder="-"
+      readonly
+      data-js-edit-input="movie-details"
+      value=""
+      autocomplete="off"
+    />
+  </label>
+</div>
+
+            <div class="field">
+  <span class="field__title">Наличие субтитров</span>
+  <label class="checkbox checkbox-edit-yesno">
+    <input class="checkbox__input _no-active" type="checkbox" name="movie-details_sub" data-js-edit-input="movie-details"  />
+    <span class="checkbox__box">
+      <svg class="icon icon--check">
+        <use xlink:href="./images/sprite.svg#check"></use>
+      </svg>
+    </span>
+    <div class="checkbox__label">
+      <span class="checkbox-edit-yesno__yes">Есть</span>
+      <span class="checkbox-edit-yesno__no">Нет</span>
+    </div>
+  </label>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal__footer">
+      <a class="btn btn--stroke" href="#!">
+        <svg class="icon icon--link">
+          <use xlink:href="./images/sprite.svg#link"></use>
+        </svg>
+        <span>Ссылка на фильм</span>
+      </a>
+      <div class="btns" data-js-edit-start-btns="movie-details">
+        <button class="btn" data-js-edit-start="movie-details">
+          <span>Редактировать</span>
+        </button>
+      </div>
+      <div class="btns hide" data-js-edit-end-btns="movie-details">
+        <button class="btn btn--stroke" data-js-edit-end="movie-details">
+          <span>Отменить</span>
+        </button>
+        <button class="btn" data-js-edit-end="movie-details">
+          <span>Сохранить</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="modal__content modal__channels" data-js-modal-item data-js-modal-path="channels-edit">
+    <div class="modal__header">
+      <h2 class="modal__header-title">Редактировать канал</h2>
+      <button class="modal__close" data-js-modal-close aria-label="Закрыть">
+        <svg class="icon icon--close">
+          <use xlink:href="./images/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="modal__body scroll">
+      <div class="channels__items">
+        <div class="field">
+          <span class="field__title">Название канала</span>
+          <div class="field__input-box">
+            <input class="field__input" type="text" name="channels-create-name" value="EchoFilm" required />
+          </div>
+        </div>
+        <div class="field">
+          <span class="field__title">Иконка канала</span>
+          <div class="field__image-box">
+            <div class="field__image">
+              <img src="./images/icons/icon-movie.png" alt="" />
+            </div>
+            <div class="field__image-input">
+              <input type="file" accept=".jpg, .png, .svg" name="channels-create-icon" required />
+              <div class="btn btn--stroke">Изменить</div>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <span class="field__title">Менеджер</span>
+          <div class="dropdown-single" data-name="channels-create-manager">
+            <button class="dropdown-single__trigger" type="button">
+              <svg class="icon icon--angle-down dropdown-single__trigger-icon">
+                <use xlink:href="./images/sprite.svg#angle-down"></use>
+              </svg>
+              <span class="dropdown-single__placeholder"> </span>
+              <span class="dropdown-single__value" style="display: none"></span>
+            </button>
+            <ul class="dropdown-single__list">
+              <li class="dropdown-single__list-item" data-value="lollykuz@gmail.com" data-selected>
+                <span class="dropdown-single__label">lollykuz@gmail.com</span>
+              </li>
+              <li class="dropdown-single__list-item" data-value="manager_2">
+                <span class="dropdown-single__label">Менеджер 2</span>
+              </li>
+              <li class="dropdown-single__list-item" data-value="manager_3">
+                <span class="dropdown-single__label">Менеджер 3</span>
+              </li>
+              <li class="dropdown-single__list-item" data-value="manager_4">
+                <span class="dropdown-single__label">Менеджер 4</span>
+              </li>
+            </ul>
+            <input type="hidden" class="dropdown-single__input-hidden" name="channels-create-manager" />
+          </div>
+        </div>
+        <div class="field">
+          <span class="field__title">Ссылка</span>
+          <div class="field__input-box">
+            <input class="field__input" type="text" name="channels-create-link" required />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal__footer">
+      <button class="btn btn--stroke" data-js-modal-close aria-label="Закрыть">
+        <span>Отменить</span>
+      </button>
+      <button class="btn" data-js-modal-close aria-label="Закрыть">
+        <span>Сохранить</span>
+      </button>
+    </div>
+  </div>
+  <div class="modal__content modal__channels" data-js-modal-item data-js-modal-path="channels-create">
+    <div class="modal__header">
+      <h2 class="modal__header-title">Создать канал</h2>
+      <button class="modal__close" data-js-modal-close aria-label="Закрыть">
+        <svg class="icon icon--close">
+          <use xlink:href="./images/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="modal__body scroll">
+      <div class="channels__items">
+        <div class="field">
+          <span class="field__title">Название канала</span>
+          <div class="field__input-box">
+            <input class="field__input" type="text" name="channels-create-name" required />
+          </div>
+        </div>
+        <div class="field">
+          <span class="field__title">Иконка канала</span>
+          <div class="field__image-box">
+            <div class="field__image">
+              <img src="./images/icons/icon-default.svg" alt="" />
+            </div>
+            <div class="field__image-input">
+              <input type="file" accept=".jpg, .png, .svg" name="channels-create-icon" required />
+              <div class="btn btn--stroke">Добавить</div>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <span class="field__title">Менеджер</span>
+          <div class="dropdown-single" data-name="channels-create-manager">
+            <button class="dropdown-single__trigger" type="button">
+              <svg class="icon icon--angle-down dropdown-single__trigger-icon">
+                <use xlink:href="./images/sprite.svg#angle-down"></use>
+              </svg>
+              <span class="dropdown-single__placeholder"> </span>
+              <span class="dropdown-single__value" style="display: none"></span>
+            </button>
+            <ul class="dropdown-single__list">
+              <li class="dropdown-single__list-item" data-value="lollykuz@gmail.com">
+                <span class="dropdown-single__label">lollykuz@gmail.com</span>
+              </li>
+              <li class="dropdown-single__list-item" data-value="manager_2">
+                <span class="dropdown-single__label">Менеджер 2</span>
+              </li>
+              <li class="dropdown-single__list-item" data-value="manager_3">
+                <span class="dropdown-single__label">Менеджер 3</span>
+              </li>
+              <li class="dropdown-single__list-item" data-value="manager_4">
+                <span class="dropdown-single__label">Менеджер 4</span>
+              </li>
+            </ul>
+            <input type="hidden" class="dropdown-single__input-hidden" name="channels-create-manager" />
+          </div>
+        </div>
+        <div class="field">
+          <span class="field__title">Ссылка</span>
+          <div class="field__input-box">
+            <input class="field__input" type="text" name="channels-create-link" required />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal__footer">
+      <button class="btn btn--stroke" data-js-modal-close aria-label="Закрыть">
+        <span>Отменить</span>
+      </button>
+      <button class="btn" data-js-modal-close aria-label="Закрыть">
+        <span>Сохранить</span>
+      </button>
+    </div>
+  </div>
+  <div class="modal__content modal__add-user" data-js-modal-item data-js-modal-path="add-user">
+    <div class="modal__header">
+      <h2 class="modal__header-title">Добавить пользователя</h2>
+      <button class="modal__close" data-js-modal-close aria-label="Закрыть">
+        <svg class="icon icon--close">
+          <use xlink:href="./images/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="modal__body scroll">
+      <div class="field">
+        <span class="field__title">Полное имя</span>
+        <label class="field__input-box">
+          <input class="field__input" type="text" name="add-user-name" value="VLADIMIR SHAGINOV" required />
+        </label>
+      </div>
+      <div class="field">
+        <span class="field__title">Почта</span>
+        <label class="field__input-box">
+          <input class="field__input" type="text" name="add-user-mail" value="shaginov1b@yandex.ru" required />
+        </label>
+      </div>
+      <div class="field">
+        <span class="field__title">Роль</span>
+        <div class="dropdown-single" data-name="add-user-role">
+          <button class="dropdown-single__trigger" type="button">
+            <svg class="icon icon--angle-down dropdown-single__trigger-icon">
+              <use xlink:href="./images/sprite.svg#angle-down"></use>
+            </svg>
+            <span class="dropdown-single__placeholder">Не выбрано</span>
+            <span class="dropdown-single__value" style="display: none"></span>
+          </button>
+          <ul class="dropdown-single__list">
+            <li class="dropdown-single__list-item" data-value="archivist" data-selected>
+              <span class="dropdown-single__label">Архивариус</span>
+            </li>
+            <li class="dropdown-single__list-item" data-value="content-manager">
+              <span class="dropdown-single__label">Контент-менеджер</span>
+            </li>
+            <li class="dropdown-single__list-item" data-value="admin">
+              <span class="dropdown-single__label">Админ</span>
+            </li>
+          </ul>
+          <input type="hidden" class="dropdown-single__input-hidden" name="add-user-role" />
+        </div>
+      </div>
+      <div class="field">
+  <span class="field__title">Пароль</span>
+  <label class="field__input-box field__input-password">
+    <input class="field__input" type="password" name="add-user-password" value="12312354" required />
+    <button class="field__btn field__btn-toggle-password" type="button" aria-label="Показать пароль">
+      <svg class="icon icon--view-off">
+        <use xlink:href="./images/sprite.svg#view-off"></use>
+      </svg>
+    </button>
+  </label>
+</div>
+
+    </div>
+    <div class="modal__footer">
+      <div class="btns">
+        <button class="btn btn--stroke" data-js-modal-close>
+          <span>Отменить</span>
+        </button>
+        <button class="btn" data-js-modal-close>
+          <span>Добавить</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal__content modal__synchronization-details"
+    data-js-modal-item
+    data-js-modal-path="synchronization-details-success"
+  >
+    <div class="modal__header">
+      <h2 class="modal__header-title">Детали синхронизации</h2>
+      <button class="modal__close" data-js-modal-close aria-label="Закрыть">
+        <svg class="icon icon--close">
+          <use xlink:href="./images/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="modal__body scroll">
+      <div class="synchronization-details__header">
+        <div class="synchronization__last-content">
+          <div class="movie-details__stauts">
+            <span class="movie-details__stauts-title">Статус</span>
+            <div class="status status--green">
+              <svg class="icon icon--check-circle">
+                <use xlink:href="./images/sprite.svg#check-circle"></use>
+              </svg>
+              <span>Успешно</span>
+            </div>
+          </div>
+          <div class="synchronization__last-info-items">
+            <div class="synchronization__last-info-item">
+              <span>Последний запуск:</span>
+              <span>20.01.2026, 21:00</span>
+            </div>
+            <div class="synchronization__last-info-item">
+              <span>Длительность:</span>
+              <span>10 мин 12 сек</span>
+            </div>
+            <div class="synchronization__last-info-item">
+              <span>Источник:</span>
+              <a href="external-movies-api.com">external-movies-api.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal__footer">
+      <div class="btns">
+        <button class="btn btn--stroke" data-js-modal-close>
+          <span>Закрыть</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal__content modal__synchronization-details"
+    data-js-modal-item
+    data-js-modal-path="synchronization-details-warning"
+  >
+    <div class="modal__header">
+      <h2 class="modal__header-title">Детали синхронизации</h2>
+      <button class="modal__close" data-js-modal-close aria-label="Закрыть">
+        <svg class="icon icon--close">
+          <use xlink:href="./images/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="modal__body scroll">
+      <div class="synchronization-details__header">
+        <div class="synchronization__last-content">
+          <div class="movie-details__stauts">
+            <span class="movie-details__stauts-title">Статус</span>
+            <div class="status status--yellow">
+              <svg class="icon icon--alert">
+                <use xlink:href="./images/sprite.svg#alert"></use>
+              </svg>
+              <span>Успешно с ошибками</span>
+            </div>
+          </div>
+          <div class="synchronization__last-info-items">
+            <div class="synchronization__last-info-item">
+              <span>Последний запуск:</span>
+              <span>20.01.2026, 21:00</span>
+            </div>
+            <div class="synchronization__last-info-item">
+              <span>Длительность:</span>
+              <span>10 мин 12 сек</span>
+            </div>
+            <div class="synchronization__last-info-item">
+              <span>Источник:</span>
+              <a href="external-movies-api.com">external-movies-api.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="synchronization-details__body">
+        <div class="synchronization-details__errors">
+          <svg class="icon icon--close-circle">
+            <use xlink:href="./images/sprite.svg#close-circle"></use>
+          </svg>
+          <span>Ошибки</span>
+        </div>
+        <div class="synchronization-details__errors-descr-box">
+          <div class="synchronization-details__errors-descr scroll">
+            <p>Основная часть данных была успешно загружена, однако некоторые фильмы не удалось обработать.</p>
+            <p>Рекомендуется ознакомиться со списком ошибок ниже.</p>
+            <ol>
+              <li>Не удалось получить данные фильма,</li>
+              <li>Ошибка соединения с источником данных,</li>
+              <li>Превышено время ожидания ответа,</li>
+              <li>Фильм с таким идентификатором уже существует,</li>
+              <li>Некорректный формат данных.</li>
+            </ol>
+            <p>Основная часть данных была успешно загружена, однако некоторые фильмы не удалось обработать.</p>
+            <p>Рекомендуется ознакомиться со списком ошибок ниже.</p>
+            <ol>
+              <li>Не удалось получить данные фильма,</li>
+              <li>Ошибка соединения с источником данных,</li>
+              <li>Превышено время ожидания ответа,</li>
+              <li>Фильм с таким идентификатором уже существует,</li>
+              <li>Некорректный формат данных.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal__footer">
+      <div class="btns">
+        <button class="btn btn--stroke" data-js-modal-close>
+          <span>Закрыть</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal__content modal__synchronization-details"
+    data-js-modal-item
+    data-js-modal-path="synchronization-details-error"
+  >
+    <div class="modal__header">
+      <h2 class="modal__header-title">Детали синхронизации</h2>
+      <button class="modal__close" data-js-modal-close aria-label="Закрыть">
+        <svg class="icon icon--close">
+          <use xlink:href="./images/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="modal__body scroll">
+      <div class="synchronization-details__header">
+        <div class="synchronization__last-content">
+          <div class="movie-details__stauts">
+            <span class="movie-details__stauts-title">Статус</span>
+            <div class="status status--red">
+              <svg class="icon icon--close-circle">
+                <use xlink:href="./images/sprite.svg#close-circle"></use>
+              </svg>
+              <span>Ошибка</span>
+            </div>
+          </div>
+          <div class="synchronization__last-info-items">
+            <div class="synchronization__last-info-item">
+              <span>Последний запуск:</span>
+              <span>20.01.2026, 21:00</span>
+            </div>
+            <div class="synchronization__last-info-item">
+              <span>Длительность:</span>
+              <span>10 мин 12 сек</span>
+            </div>
+            <div class="synchronization__last-info-item">
+              <span>Источник:</span>
+              <a href="external-movies-api.com">external-movies-api.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="synchronization-details__body">
+        <div class="synchronization-details__errors">
+          <svg class="icon icon--close-circle">
+            <use xlink:href="./images/sprite.svg#close-circle"></use>
+          </svg>
+          <span>Ошибки</span>
+        </div>
+        <div class="synchronization-details__errors-descr-box">
+          <div class="synchronization-details__errors-descr scroll">
+            <p>Основная часть данных была успешно загружена, однако некоторые фильмы не удалось обработать.</p>
+            <p>Рекомендуется ознакомиться со списком ошибок ниже.</p>
+            <ol>
+              <li>Не удалось получить данные фильма,</li>
+              <li>Ошибка соединения с источником данных,</li>
+              <li>Превышено время ожидания ответа,</li>
+              <li>Фильм с таким идентификатором уже существует,</li>
+              <li>Некорректный формат данных.</li>
+            </ol>
+            <p>Основная часть данных была успешно загружена, однако некоторые фильмы не удалось обработать.</p>
+            <p>Рекомендуется ознакомиться со списком ошибок ниже.</p>
+            <ol>
+              <li>Не удалось получить данные фильма,</li>
+              <li>Ошибка соединения с источником данных,</li>
+              <li>Превышено время ожидания ответа,</li>
+              <li>Фильм с таким идентификатором уже существует,</li>
+              <li>Некорректный формат данных.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal__footer">
+      <div class="btns">
+        <button class="btn btn--stroke" data-js-modal-close>
+          <span>Закрыть</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal__content modal__synchronization-details"
+    data-js-modal-item
+    data-js-modal-path="synchronization-details-failed"
+  >
+    <div class="modal__header">
+      <h2 class="modal__header-title">Детали синхронизации</h2>
+      <button class="modal__close" data-js-modal-close aria-label="Закрыть">
+        <svg class="icon icon--close">
+          <use xlink:href="./images/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="modal__body scroll">
+      <div class="synchronization-details__header">
+        <div class="synchronization__last-content">
+          <div class="movie-details__stauts">
+            <span class="movie-details__stauts-title">Статус</span>
+            <div class="status status--grey">
+              <svg class="icon icon--stop">
+                <use xlink:href="./images/sprite.svg#stop"></use>
+              </svg>
+              <span>Не выполнено</span>
+            </div>
+          </div>
+          <div class="synchronization__last-info-items">
+            <div class="synchronization__last-info-item">
+              <span>Последний запуск:</span>
+              <span>20.01.2026, 21:00</span>
+            </div>
+            <div class="synchronization__last-info-item">
+              <span>Длительность:</span>
+              <span>10 мин 12 сек</span>
+            </div>
+            <div class="synchronization__last-info-item">
+              <span>Источник:</span>
+              <a href="external-movies-api.com">external-movies-api.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="synchronization-details__body">
+        <div class="synchronization-details__errors">
+          <svg class="icon icon--close-circle">
+            <use xlink:href="./images/sprite.svg#close-circle"></use>
+          </svg>
+          <span>Ошибки</span>
+        </div>
+        <div class="synchronization-details__errors-descr-box">
+          <div class="synchronization-details__errors-descr scroll">
+            <p>Основная часть данных была успешно загружена, однако некоторые фильмы не удалось обработать.</p>
+            <p>Рекомендуется ознакомиться со списком ошибок ниже.</p>
+            <ol>
+              <li>Не удалось получить данные фильма,</li>
+              <li>Ошибка соединения с источником данных,</li>
+              <li>Превышено время ожидания ответа,</li>
+              <li>Фильм с таким идентификатором уже существует,</li>
+              <li>Некорректный формат данных.</li>
+            </ol>
+            <p>Основная часть данных была успешно загружена, однако некоторые фильмы не удалось обработать.</p>
+            <p>Рекомендуется ознакомиться со списком ошибок ниже.</p>
+            <ol>
+              <li>Не удалось получить данные фильма,</li>
+              <li>Ошибка соединения с источником данных,</li>
+              <li>Превышено время ожидания ответа,</li>
+              <li>Фильм с таким идентификатором уже существует,</li>
+              <li>Некорректный формат данных.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal__footer">
+      <div class="btns">
+        <button class="btn btn--stroke" data-js-modal-close>
+          <span>Закрыть</span>
+        </button>
+        <button class="btn" data-js-modal-close>
+          <span>Повторить синхронизацию</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

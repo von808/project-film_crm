@@ -13,7 +13,12 @@
       <header class="header header--archivist" id="header">
   <div class="container">
     <div class="header__inner">
-      <a href="./" class="logo">Film CRM</a>
+      <div class="header__left">
+        <button class="burger-btn" data-js-burger-btn>
+          <span class="burger-icon"></span>
+        </button>
+        <a href="./" class="logo">Film CRM</a>
+      </div>
 
       <nav class="nav header__nav">
         <ul class="nav__list">
@@ -44,9 +49,6 @@
             <span class="account__status">Архивариус</span>
           </div>
         </div>
-        <button class="burger-btn" data-js-burger-btn>
-          <span class="burger-icon"></span>
-        </button>
       </div>
 
       <div class="notification-popup" data-js-notification-popup>
@@ -124,7 +126,7 @@
 </header>
 <div class="burger-overlay" data-js-burger-overlay></div>
 <div class="burger-menu" data-js-burger-menu>
-  <ul class="burger-menu__list">
+  <ul class="burger-menu__list scroll">
     <li class="burger-menu__item"><a class="burger-menu__link" href="arch-publications-database.html">База для публикаций</a></li>
   </ul>
 </div>

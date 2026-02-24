@@ -85,8 +85,8 @@
 </symbol><symbol viewBox="0 0 20 20" id="plus" xmlns="http://www.w3.org/2000/svg">
     <path d="M10 3.33333V16.6667" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M3.3335 10H16.6668" stroke-linecap="round" stroke-linejoin="round"/>
-</symbol><symbol viewBox="0 0 20 20" id="reload" xmlns="http://www.w3.org/2000/svg">
-    <path d="M14.0355 16.2083C16.1237 14.8199 17.5 12.4457 17.5 9.75C17.5 5.46979 14.0302 2 9.75 2C9.15808 2 8.58166 2.06636 8.02778 2.19204M14.0355 16.2083V13.1944M14.0355 16.2083H17.0694M5.44444 3.30506C3.36747 4.69534 2 7.06297 2 9.75C2 14.0302 5.46979 17.5 9.75 17.5C10.3419 17.5 10.9183 17.4336 11.4722 17.308M5.44444 3.30506V6.30556M5.44444 3.30506H2.43056" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol viewBox="0 0 24 24" id="reload" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.2532 19.9167C19.8129 18.2147 21.5 15.3044 21.5 12C21.5 6.75329 17.2467 2.5 12 2.5C11.2744 2.5 10.5678 2.58134 9.88889 2.73541M17.2532 19.9167V16.2222M17.2532 19.9167H20.9722M6.72222 4.09975C4.17625 5.80396 2.5 8.70623 2.5 12C2.5 17.2467 6.75329 21.5 12 21.5C12.7256 21.5 13.4322 21.4187 14.1111 21.2646M6.72222 4.09975V7.77778M6.72222 4.09975H3.02778" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol><symbol viewBox="0 0 20 20" id="search" xmlns="http://www.w3.org/2000/svg">
     <path d="M14.3999 14.4001L17.9998 18" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M16.3997 9.19986C16.3997 5.22349 13.1762 2 9.19986 2C5.22349 2 2 5.22349 2 9.19986C2 13.1762 5.22349 16.3997 9.19986 16.3997C13.1762 16.3997 16.3997 13.1762 16.3997 9.19986Z" stroke-linejoin="round"/>
